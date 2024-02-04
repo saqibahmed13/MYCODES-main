@@ -23,8 +23,8 @@ function sum(a,b){
 
 
 function calculator(a,b,callback){
-    let result = callback(a,b);       // in callback return statement is there you need use 
-    console.log(result)
+    let result = callback(a,b);       // in callback return statement is there you need to use 
+    console.log(result);
 }
 
  calculator(5,6,sum);
@@ -32,7 +32,7 @@ function calculator(a,b,callback){
 
 // real callback some example
 
-// suppose we data 1 to execute first and then data 2
+// suppose we need data 1 to execute first and then data 2
    
 function getData(dataId, getNextData){
     setTimeout(()=>{
@@ -115,7 +115,7 @@ function getData2(dataId2){
     }) 
 }
 
-// this is promise chaining compare to callback hell it is less back
+// this is promise chaining compare to callback hell it is less complex ew
 
 getData2(1)
 .then((res)=>{  
