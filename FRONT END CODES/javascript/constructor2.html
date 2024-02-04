@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Display the year of the car</h4>
+    <p id="demo"></p>
+
+    <script type="module">
+        class car{
+            constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+
+            age(x){
+                
+                return x - this.year;
+            }
+
+        }
+
+    let carAge = prompt("enter your car age");
+    let d = new Date();
+    let y = d.getFullYear();
+    let myCar = new car("suzuki", carAge);     // first will create an instance then will access the age with the help of that instance along with the value (y).
+    let result = "your car age is " + myCar.age(y);
+
+    document.getElementById('demo').innerHTML = result;  
+    </script>
+</body>
+</html>
+

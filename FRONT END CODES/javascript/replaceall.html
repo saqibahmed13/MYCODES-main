@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>using replaceall in javascript</h3>
+<p id="demo">I love dogs because dogs are beautifull </p>
+
+<button onclick="newReplace()">click to change the animal!</button>
+
+
+    <script>
+        function newReplace(){
+            let text = document.getElementById('demo').innerHTML;
+            document.getElementById('demo').innerHTML=text.replaceAll("dogs","cats");
+        }
+    </script>
+</body>
+</html>

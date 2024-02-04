@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myBtn"> Click Me!</button>
+    <p id="demo"></p>
+
+    <script>
+var x = document.getElementById('myBtn');
+x.addEventListener('mouseover',mouseOver);
+x.addEventListener('mouseout',mouseOut);
+x.addEventListener('click',function(){clicked()}); // we can also use function(){}
+
+
+function mouseOver(){
+    document.getElementById('demo').innerHTML += "mouseover hua</br>" 
+}
+
+function mouseOut(){
+    document.getElementById('demo').innerHTML +="mouseOut hua </br>"
+}
+
+function clicked(){
+    document.getElementById('demo').innerHTML += "click kare manje<br>"
+}
+</script>
+</body>
+</html>

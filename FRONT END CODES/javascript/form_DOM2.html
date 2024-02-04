@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input  id="numb"  type="text">
+    <button type="button" onclick="myFunc()">Submit</button>
+    <p id="demo"></p>
+
+    <script>
+        
+        function myFunc() {
+            let x = document.getElementById('numb').value;
+            let txt ;
+            if(isNaN(x) || x<1 || x>10){
+                txt = "not valid";
+            }
+            else{
+                txt = "its valid";
+            }
+            document.getElementById('demo').innerHTML = txt;
+        }
+        
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="numb" type="text">
+    <button type="button" onclick="myFunc()">Submit</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunc() {
+            let x = document.getElementById('numb').value;
+            let txt;
+            if (x === "") {
+                txt = "Please enter a number.";
+            } else if (isNaN(x) || x < 1 || x > 10) {
+                txt = "Not valid";
+            } else {
+                txt = "Valid";
+            }
+            document.getElementById('demo').innerHTML = txt;
+        }
+    </script>
+</body>
+</html> -->

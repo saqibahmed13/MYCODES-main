@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="Btn">click for calculations</button>
+    <p id="demo" ></p>
+    <script>
+        let x = 10;
+        let y = 5;
+
+        let z = document.getElementById('Btn');
+        z.addEventListener('click',function(){
+            myCals(x,y);
+        });
+
+        
+    //          or
+    //     document.getElementById('Btn').addEventListener('click',function(){
+    // myCals(x,y);}
+    //  )
+
+        function myCals(x,y){
+            document.getElementById('demo').innerHTML = y *x;
+        }
+    </script>
+</body>
+</html>
+

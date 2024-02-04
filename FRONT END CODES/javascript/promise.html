@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>this is using callback</h2>
+    <p id="demo"></p>
+    <h2>this is using promsies</h2>
+    <h3 id="demo2"></h3>
+    
+    <script>
+        setTimeout(function(){
+            meraCallBack("hey");
+        },2000);
+
+        function meraCallBack(value){
+            document.getElementById('demo').innerHTML = value;
+        }
+    </script>
+    
+     <script>
+        const mypromise =  new Promise((resolve, reject) => {
+            setTimeout(function(){
+                resolve("hi");
+            },3000)
+            })
+
+            mypromise.then(function(value){
+                document.getElementById('demo2').innerHTML = value;
+            });
+
+
+        
+            
+       
+     </script>
+
+
+</body>
+</html>
+
+

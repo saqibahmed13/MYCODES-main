@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #56d131;
+    padding: 10px;
+  }
+
+.nav-items {
+    list-style: none; 
+    display: flex;
+    /* justify-content: flex-end;  */
+  }
+
+.nav-items li {
+    margin-left: 90px; 
+  }
+
+  .nav-items li a {
+    color: #fff; 
+    text-decoration: none;
+    /* font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase; */
+  } 

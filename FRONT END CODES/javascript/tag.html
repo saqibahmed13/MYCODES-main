@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <li>head</li>
+    <li>body</li>
+    <li>tail</li>
+    <script>
+        let r = document.getElementsByTagName('li');
+        let z = document.getElementById('demo').innerHTML = r.length;
+    </script>
+</body>
+</html>

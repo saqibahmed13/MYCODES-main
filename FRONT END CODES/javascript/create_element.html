@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="div1"> 
+    <p> this is a paragraph</p>
+</div>
+    <script>
+        let newPara = document.createElement("p");
+        let node = document.createTextNode("this is new paragraph");
+        newPara.appendChild(node);
+        let element = document.getElementById('div1');
+        element.appendChild(newPara);
+
+    </script>
+</body>
+</html>
+

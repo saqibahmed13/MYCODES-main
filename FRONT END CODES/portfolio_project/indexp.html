@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creating Elements Example</title>
+</head>
+<body>
+  <ul id="myList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <button id="addButton">Add Item</button>
+
+  <script>
+    const addButton = document.getElementById('addButton');
+    const myList = document.getElementById('myList');
+
+    addButton.addEventListener('click', () => {
+      // Create a new list item element
+      const newItem = document.createElement('li');
+
+      // Set the text content of the new item
+      newItem.textContent = 'New Item';
+
+      // Append the new item to the list
+      myList.appendChild(newItem);
+    });
+  </script>
+</body>
+</html>
+

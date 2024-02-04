@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>The Time will display after 3 seconds  </h3>
+    <p id="demo"></p>
+    <script>
+        setInterval(myTime , 3000);
+
+        function myTime(){
+          let d = new Date();
+          let realTime = d.getHours() -12 + ":" + d.getMinutes() + ":" + d.getMinutes();
+          document.getElementById('demo').innerHTML = realTime;
+        }
+    </script>
+</body>
+</html>

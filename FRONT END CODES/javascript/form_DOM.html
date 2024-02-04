@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm" action="/submit" method="post">
+        <input type="text" name="username" value="JohnDoe">
+        <input type="password" name="password" value="Secret123">
+        <button type="submit">Submit</button>
+      </form>
+      <script>
+        // Access the form by its name
+var myForm = document.forms["myForm"];
+
+// Access form elements
+var usernameInput = myForm.elements["username"];
+var passwordInput = myForm.elements["password"];
+
+// Access and change element values
+usernameInput.value = "Saqib";
+var usernameValue = usernameInput.value; // "JohnDoe"
+
+passwordInput. value = "NewPassword"; // Change the password value
+</script>
+      
+</body>
+</html>

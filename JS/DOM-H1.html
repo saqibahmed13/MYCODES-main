@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesDOM.css">
+</head>
+<body>
+    <h1>Hello Javascript</h1>
+    <div class="box">First Div</div>
+    <div class="box">Second Div</div>
+    <div class="box">Third Div</div>
+    <script>
+    // document.querySelector("h1").append(" from Apna College");
+    // or
+
+    let h1 = document.querySelector("h1");
+    
+    h1.innerText = h1.innerText + " from Apna college";
+
+    let divs = document.querySelectorAll(".box");
+    divs[0].innerText = "First box nahi last box ine "
+    
+    </script>
+</body>
+</html>

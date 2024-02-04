@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>classList Example</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div id="myElement">This is a div</div>
+
+  <script>
+    // Get the element by its ID
+    var element = document.getElementById("myElement");
+
+    // Add a class
+    element.classList.add("highlight");
+
+    // Remove a class
+    element.classList.remove("someClass");
+
+    // Toggle a class
+    element.classList.toggle("active");
+
+    // Check if a class is present
+    if (element.classList.contains("highlight")) {
+      console.log("The element has the 'highlight' class.");
+    }
+  </script>
+</body>
+</html>

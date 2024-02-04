@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h3 class="demo1">Hi, hello people!</h3>
+    <h3 class="demo1">this is a demo</h3>
+    <p id="demo"></p>
+    <script>
+        let x = document.getElementsByClassName('demo1');
+        document.getElementById('demo').innerHTML = "this is an example :" + x[0].innerHTML;
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>getElementsByTagName Example</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h1>Another Heading 1</h1>
+    <h1>Yet Another Heading 1</h1>
+
+    <script>
+        // Select all <h1> elements on the page
+        var headings = document.getElementsByTagName("h1");
+
+        // Loop through the collection and change the text of each heading
+        for (var i = 0; i < headings.length; i++) {
+            headings[i].textContent = "New Heading Text";
+        }
+    </script>
+</body>
+</html>
