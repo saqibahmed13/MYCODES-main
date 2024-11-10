@@ -6,7 +6,7 @@
 
 
 const person = {
-    name:"saqib",
+    name:"saqib",      // name is key or property and saqib is the value
     lname:"ahmed",
     age: 24,
     gender:"male"
@@ -19,6 +19,24 @@ person.name = "sagheer";
 
 // can modify like this 
 console.log(person.name);
+
+// difference between const let and var
+
+// var is the functional scope meaning we can change the values with the functions and also we can re declare the values using var 
+
+// with let we cannot redeclare the values 
+
+// When you declare a variable with const and assign it an object[person], the variable holds a reference to that object, not the actual object itself.
+// You cannot change that reference (i.e., point the variable to a completely different object), but you can modify the contents of the object (e.g., change its properties).
+
+const person = { name: "Alice" };  // this object (person) has different memory location 
+person.name = "Bob"; // No error, mutating the object
+console.log(person.name); // Bob
+
+person = { name: "Charlie" };  // this has different memory location 
+  // Output : Error ---> Assignment to constant variable
+
+// The above can be achived using let and var 
 
 // basic example with empty object 
 
