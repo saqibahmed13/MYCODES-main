@@ -36,7 +36,7 @@ console.log(person.name); // Bob
 person = { name: "Charlie" };  // this has different memory location 
   // Output : Error ---> Assignment to constant variable
 
-// The above can be achived using let and var 
+// The above can be achieved using let and var 
 
 // basic example with empty object 
 
